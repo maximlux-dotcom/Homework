@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цитаты</title>
+    <style>
+        @import url('fonts/main_font.css');
+
+        body {
+            margin-top: 150px;
+            margin-left: 400px;
+            background: linear-gradient(to bottom, #cdb2f1);
+            color: #000000;
+        }
+
+        * {
+            /* Сбрасывание стандартных стилей и добавление шрифтов */
+            margin: 0;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        .content {
+            /* Эти два свойства нужны чтобы фон подстраивался на весь экран */
+            background-size: cover;
+            min-height: 100vh;
+            /* Пиши свой код ниже */
+        }
+
+        h2 {
+            margin-top: 30px;
+            /* увеличивает отступ сверху у h2 */
+        }
+
+
+        .top-button {
+            position: absolute;
+            top: 820px;
+            left: 230px;
+        }
+
+        .top-button a {
+            display: inline-block;
+            background: #6750A4;
+            color: white;
+            padding: 20px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: x-large;
+            /* Тень под элементом. 2 пикселя смещения по оси x, 2 пикселя смещения по оси y, 2 пикселя - размытие тени, цвет серый */
+            box-shadow: 4px 2px 6px grey;
+
+            /* Меняется курсор на руку при наведении на элемент */
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .top-button a:hover {
+            background: red;
+            transform: scale(1.1);
+        }
+
+        .top-button {
+            display: flex;
+            gap: 600px;
+
+        }
+
+        li {
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        img {
+            width: 30vh;
+            right: 35vh;
+            position: absolute;
+            top: 45vh;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Мои любимые цитаты:</h1>
+    <ul>
+        <li>«Я бы мог объяснить, но ты всё равно сделаешь по-своему»</li>
+        <li>«Да, я молчу. Нет, это не значит, что мне всё равно»</li>
+        <li>«Я не сложный. Просто требования выше среднего»</li>
+        <li>«Спокойствие — это когда ты всё понял, но решил не участвовать»</li>
+        <li>«Я не ленюсь. Я экономлю энергию на важное»</li>
+        <li>«Если меня не видно — это не значит, что я не наблюдаю»</li>
+    </ul>
+
+    <div class="top-button">
+        <a href="memes.html" class="button"> &lt;&lt;&lt; Предыдущая страница</a>
+        <a href="index.html" class="button">На главную</a>
+    </div>
+
+    <img src="./images/cubik.png" alt="">
+</body>
+
+</html>

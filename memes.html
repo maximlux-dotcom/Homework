@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мемы</title>
+    <style>
+        @import url('fonts/main_font.css');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #cdb2f1);
+            color: #000000;
+            min-height: 100vh;
+            padding-bottom: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+        }
+
+        /* Контейнер для мемов - 2 в ряд */
+        .meme-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Стили для изображений */
+        .meme-container img {
+            width: calc(50% - 20px);
+            max-width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .meme-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Кнопки навигации */
+        .top-button {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 80px;
+            padding: 20px;
+        }
+
+        .top-button a {
+            display: inline-block;
+            background: #6750A4;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: large;
+            box-shadow: 4px 2px 6px grey;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .top-button a:hover {
+            background: #9b7fd4;
+            transform: scale(1.05);
+        }
+
+        .push {
+            width: 350px;
+            left: 140px;
+            position: absolute;
+            top: 700px;
+        }
+        .abs {
+            width: 400px;
+            right: 50px;
+            position: absolute;
+            top: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Мои любимые мемы:</h1>
+    
+    <div class="meme-container">
+        <img src="./images/мелстрой.jpg" alt="Мелстрой">
+        <img src="./images/маша.jpg" alt="Маша">
+        <img src="./images/meme1.jpeg" alt="Мем 1">
+        <img src="./images/meme3.png" alt="Мем 3">
+    </div>
+
+    <div class="top-button">
+        <a href="./facts.html">&lt;&lt;&lt; Предыдущая страница</a>
+        <a href="./quotes.html">Следующая страница &gt;&gt;&gt;</a>
+    </div>
+    <img src="./images/дизайнерский элемент.png" alt="" class="push">
+    <img src="./images/абстракция.png" alt="" class="abs">
+
+</body>
+
+</html>

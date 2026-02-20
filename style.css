@@ -1,0 +1,106 @@
+@import url('fonts/main_font.css');
+
+        body {
+            margin-top: 150px;
+            margin-left: 400px;
+            background: linear-gradient(to bottom, #cdb2f1);
+            color: #000000;
+        }
+
+        * {
+            /* Сбрасывание стандартных стилей и добавление шрифтов */
+            margin: 0;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        .content {
+            /* Эти два свойства нужны чтобы фон подстраивался на весь экран */
+            background-size: cover;
+            min-height: 100vh;
+            /* Пиши свой код ниже */
+        }
+
+        h2 {
+            margin-top: 30px;
+            /* увеличивает отступ сверху у h2 */
+        }
+
+
+        .top-button {
+            position: absolute;
+            top: 820px;
+            right: 300px;
+        }
+
+        .top-button a {
+            display: inline-block; 
+            background: #6750A4;
+            color: white;
+            padding: 20px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: x-large;
+            /* Тень под элементом. 2 пикселя смещения по оси x, 2 пикселя смещения по оси y, 2 пикселя - размытие тени, цвет серый */
+            box-shadow: 4px 2px 6px grey;
+
+            /* Меняется курсор на руку при наведении на элемент */
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .top-button a:hover {
+    background: red;
+    transform: scale(1.1);
+}
+
+
+
+        .image-text-row {
+            display: flex;
+            /* ставим элементы в ряд */
+            align-items: start;
+            /* выравниваем по вертикали */
+            gap: 30px;
+            /* расстояние между картинкой и текстом */
+            max-width: 950px;
+            /* ограничиваем ширину блока текста */
+            line-height: 1.5;
+            /* регулируем межстрочный интервал, по желанию */
+        }
+
+        /* Класс для расположения элементов в 1 ряд */
+        .in-one-line {
+            display: flex;
+            /* Отступ между элементами */
+            gap: 32px;
+        }
+
+        /* Класс для центрирования страницы */
+        .center {
+            padding-left: calc(50% - 500px);
+            padding-right: calc(50% - 500px);
+        }
+
+        .photo-1 {
+            width: 500px;
+            margin-top: 10px;
+            border-radius: 25px;
+            box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .photo-2 {
+            width: 500px;
+            position: absolute;
+            left: 0;
+            top: 600px;
+
+        }
+
+        .photo-3 {
+            width: 200px;
+            position: absolute;
+            right: 60px;
+            top: 350px;
+        }
+
+        
