@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Факты обо мне</title>
+    <style>
+        @import url('fonts/main_font.css');
+
+        body {
+            margin-top: 7.5%;
+            margin-left: 20%;
+            background: linear-gradient(to bottom, #cdb2f1);
+            color: #000000;
+        }
+
+        * {
+            /* Сбрасывание стандартных стилей и добавление шрифтов */
+            margin: 0;
+            font-family: 'StratosSkyeng', sans-serif;
+        }
+
+        .StepanText {
+            width: 80%;
+        }
+
+        .content {
+            /* Эти два свойства нужны чтобы фон подстраивался на весь экран */
+            background-size: cover;
+            min-height: 100vh;
+            /* Пиши свой код ниже */
+        }
+
+        h2 {
+            margin-top: 30px;
+            /* увеличивает отступ сверху у h2 */
+        }
+
+
+        .top-button {
+            position: absolute;
+            top: 820px;
+            right: 300px;
+        }
+
+        .top-button a {
+            display: inline-block;
+            background: #6750A4;
+            color: white;
+            padding: 20px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: x-large;
+            /* Тень под элементом. 2 пикселя смещения по оси x, 2 пикселя смещения по оси y, 2 пикселя - размытие тени, цвет серый */
+            box-shadow: 4px 2px 6px grey;
+
+            /* Меняется курсор на руку при наведении на элемент */
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .top-button a:hover {
+            background: red;
+            transform: scale(1.1);
+        }
+
+        .top-button {
+            display: flex;
+            gap: 600px;
+
+        }
+
+        li {
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="StepanText">
+        <h1>Крутые факты обо мне:</h1>
+        <ol>
+            <li>Я не шиплю. Я предупреждаю. Если ты это услышал — значит, я уже дал тебе шанс.</li>
+            <li>Я не хожу — я дефилирую. Да, так ходят только те, кто знает, что он главный персонаж.</li>
+            <li>Если я смотрю на тебя долго — не пугайся. Я просто решаю: ты мой союзник или будущая жертва.</li>
+            <li>Я не нападаю первым. Я просто всегда готов ко второму раунду. И к третьему тоже.</li>
+            <li>Я гусь, но интеллект у меня как у финального босса. Поэтому будь вежлив — побочные квесты я выдаю редко.
+            </li>
+        </ol>
+    </div>
+
+    <div class="top-button">
+        <a href="index.html" class="button"> &lt;&lt;&lt; Предыдущая страница</a>
+
+        <a href="./memes.html">Следующая страница &gt;&gt;&gt;</a>
+    </div>
+</body>
+
+</html>
